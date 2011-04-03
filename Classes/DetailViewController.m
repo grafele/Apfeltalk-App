@@ -137,7 +137,10 @@
     // NSString *queryString = extractTextFromHTMLForQuery(bodyString, @"//div[1]"); not used
     // This does not work, as the query specifically extracts text
     
-	bodyString = [NSString stringWithFormat:@"<div style=\"text-align:center; font-weight:bold;\">%@</div>%@</div>",  [[self story] title], extractedString];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"default" ofType:@"css"];
+	NSString *cssCode = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    
+	bodyString = [NSString stringWithFormat:@"<style type=\"text/css\"> %@ </style> <div style=\"text-align:center; font-weight:bold;\">%@</div>%@</div>", cssCode, [[self story] title], extractedString];
     bodyString = [[self baseHtmlString] stringByReplacingOccurrencesOfString:@"%@" withString:bodyString];
 
 	return [self scaledHtmlStringFromHtmlString:bodyString];

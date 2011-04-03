@@ -255,19 +255,20 @@ didDismissWithButtonIndex:(NSInteger)buttonIndex
 
 - (void)viewDidLoad
 {
-    NSArray            *imgArray = [NSArray arrayWithObjects:NSLocalizedString (@"Optionen", @""), [UIImage imageNamed:@"Up.png"], [UIImage imageNamed:@"Down.png"], nil];
+    NSArray            *imgArray = [NSArray arrayWithObjects:[UIImage imageNamed:@"Up.png"], [UIImage imageNamed:@"Down.png"], nil];
 	UISegmentedControl *segControl = [[UISegmentedControl alloc] initWithItems:imgArray];
 
     [super viewDidLoad];
 
 	[segControl addTarget:[[[self navigationController] viewControllers] objectAtIndex:0] action:@selector(changeStory:)
          forControlEvents:UIControlEventValueChanged];
-    [segControl setFrame:CGRectMake(0.0, 0.0, 170.0, 30.0)];
+    [segControl setFrame:CGRectMake(0.0, 0.0, 110.0, 30.0)];
 	[segControl setSegmentedControlStyle:UISegmentedControlStyleBar];
 	[segControl setMomentary:YES];
 
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:segControl];
+    UIBarButtonItem* rightItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString (@"Optionen", @"") style:UIBarButtonItemStyleBordered target:[[[self navigationController] viewControllers] lastObject] action:@selector(speichern:)];
 
+    [[self navigationItem] setTitleView:segControl];
     [[self navigationItem] setRightBarButtonItem:rightItem];
     [[[[self navigationController] viewControllers] objectAtIndex:0] changeStory:segControl];
 

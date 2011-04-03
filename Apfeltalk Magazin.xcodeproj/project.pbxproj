@@ -59,6 +59,7 @@
 		F634308510362E27004ACF93 /* GalleryController.m in Sources */ = {isa = PBXBuildFile; fileRef = F634308410362E27004ACF93 /* GalleryController.m */; };
 		F6658266104FC21300BF91E9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6658265104FC21300BF91E9 /* RootViewController.m */; };
 		F66BF56F105D5D59002F8C36 /* apfelshow.png in Resources */ = {isa = PBXBuildFile; fileRef = F66BF56E105D5D59002F8C36 /* apfelshow.png */; };
+		F6730BA213490EE70045B876 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = F6730BA113490EE70045B876 /* default.css */; };
 		F69CED7610DA770800E72FD5 /* TwitterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F69CED7510DA770800E72FD5 /* TwitterRequest.m */; };
 		F69CEE7110DA94D400E72FD5 /* FBConnectGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = F69CEE5F10DA94D400E72FD5 /* FBConnectGlobal.m */; };
 		F69CEE7210DA94D400E72FD5 /* FBSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F69CEE6110DA94D400E72FD5 /* FBSession.m */; };
@@ -155,6 +156,7 @@
 		F634308410362E27004ACF93 /* GalleryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryController.m; sourceTree = "<group>"; };
 		F6658265104FC21300BF91E9 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		F66BF56E105D5D59002F8C36 /* apfelshow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apfelshow.png; sourceTree = "<group>"; };
+		F6730BA113490EE70045B876 /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
 		F69CED7410DA770800E72FD5 /* TwitterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwitterRequest.h; path = Classes/TwitterRequest.h; sourceTree = "<group>"; };
 		F69CED7510DA770800E72FD5 /* TwitterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwitterRequest.m; path = Classes/TwitterRequest.m; sourceTree = "<group>"; };
 		F69CEE5D10DA94D400E72FD5 /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBConnect.h; path = FBConnect/FBConnect.h; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 			children = (
 				CBBD046610DE4C020056C183 /* LoadingCell.xib */,
 				CB1E3BC610CC674600B01120 /* Entitlements.plist */,
+				F6730BA113490EE70045B876 /* default.css */,
 				CB1434AE1058616500B5FF14 /* Images */,
 				F6FB7DD5104EDE2F007F5A54 /* Fullscreen.xib */,
 				F634304A10362AA4004ACF93 /* DetailView.xib */,
@@ -491,6 +494,7 @@
 				CBBD046710DE4C020056C183 /* LoadingCell.xib in Resources */,
 				5AFB72DC1348A0270027752A /* thread_dot_hot.png in Resources */,
 				5AFB72DD1348A0270027752A /* thread_dot.png in Resources */,
+				F6730BA213490EE70045B876 /* default.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

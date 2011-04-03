@@ -202,16 +202,11 @@ const int SAVED_MESSAGES_SECTION_INDEX = 1;
 
     switch ([(UISegmentedControl *)sender selectedSegmentIndex])
     {
-        case 0:     // Options
-            [[[[self navigationController] viewControllers] lastObject] performSelector:@selector(speichern:) withObject:sender];
-            return;
-            break;
-
-        case 1:     // Up
+        case 0:     // Up
             newIndex--;
             break;
 
-        case 2:     // Down
+        case 1:     // Down
             newIndex++;
             break;
     }
@@ -224,8 +219,8 @@ const int SAVED_MESSAGES_SECTION_INDEX = 1;
         [[[[self navigationController] viewControllers] lastObject] updateInterface];
     }
 
-    [(UISegmentedControl *)sender setEnabled:([self displayedStoryIndex] > 0) forSegmentAtIndex:1];
-    [(UISegmentedControl *)sender setEnabled:!([self displayedStoryIndex] == ([storiesArray count] - 1)) forSegmentAtIndex:2];
+    [(UISegmentedControl *)sender setEnabled:([self displayedStoryIndex] > 0) forSegmentAtIndex:0];
+    [(UISegmentedControl *)sender setEnabled:!([self displayedStoryIndex] == ([storiesArray count] - 1)) forSegmentAtIndex:1];
 }
 
 - (void)updateApplicationIconBadgeNumber {
