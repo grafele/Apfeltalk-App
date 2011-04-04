@@ -48,7 +48,7 @@
 - (IBAction)about:(id)sender {
 	[newsTable reloadData];
 	UIAlertView *alert = [[UIAlertView alloc]
-						  initWithTitle:@"Credits" // oder einfach Wilkommen in der Touch-Mania.com Applikation?
+						  initWithTitle:@"Impressum" // oder einfach Wilkommen in der Touch-Mania.com Applikation?
 						  message:@"Diese App entstand für die Community mit der Community und steht unter der Lizenz GPL v2. Entwickelt wurde sie mit freundlicher Unterstützung der Apfeltalk GmbH. Für die Richtigkeit der Inhalte wird nicht gehaftet. Die Forenzugriffs-API stammt von Tapatalk."
 						  delegate:self
 						  cancelButtonTitle:@"OK"
