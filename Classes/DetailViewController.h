@@ -24,12 +24,13 @@
 
 #import <UIKit/UIKit.h>
 #import "Story.h"
+#import "AsyncImageButton.h"
 #import <MediaPlayer/MediaPlayer.h>
 
 @interface DetailViewController : UIViewController <UIWebViewDelegate> {
 	IBOutlet UILabel *datum;
 	IBOutlet UILabel *lblText;
-	IBOutlet UIButton *thumbnailButton;
+	IBOutlet AsyncImageButton *thumbnailButton;
 	IBOutlet UIScrollView *scrollView2;
 	IBOutlet UITextView *sunText;
 	IBOutlet UINavigationBar *Textvar;

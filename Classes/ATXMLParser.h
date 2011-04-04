@@ -43,7 +43,7 @@
 
 #pragma mark -
 
-@interface ATXMLParser : NSObject
+@interface ATXMLParser : NSObject <NSXMLParserDelegate>
 {
     id <ATXMLParserDelegateProtocol> delegate;
     Class                            storyClass;

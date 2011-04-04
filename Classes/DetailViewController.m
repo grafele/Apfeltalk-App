@@ -180,7 +180,8 @@
 	}
 	[dateFormatter release];
 
-	[thumbnailButton setBackgroundImage:[self thumbimage] forState:UIControlStateNormal];
+	//[thumbnailButton setBackgroundImage:[self thumbimage] forState:UIControlStateNormal];
+    [thumbnailButton loadImageFromURL:[NSURL URLWithString:[[self story] thumbnailLink]]];
 	[webview loadHTMLString:[self htmlString] baseURL:nil];
 }
 

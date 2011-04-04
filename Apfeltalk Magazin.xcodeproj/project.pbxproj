@@ -62,6 +62,11 @@
 		F6658266104FC21300BF91E9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6658265104FC21300BF91E9 /* RootViewController.m */; };
 		F66BF56F105D5D59002F8C36 /* apfelshow.png in Resources */ = {isa = PBXBuildFile; fileRef = F66BF56E105D5D59002F8C36 /* apfelshow.png */; };
 		F6730BA213490EE70045B876 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = F6730BA113490EE70045B876 /* default.css */; };
+		F6730BBA134A67040045B876 /* AsyncImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F6730BB9134A67040045B876 /* AsyncImageButton.m */; };
+		F6730BE4134A70B40045B876 /* GCImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = F6730BE2134A70B40045B876 /* GCImageViewer.m */; };
+		F6730BE5134A70B40045B876 /* GCImageViewer.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6730BE3134A70B40045B876 /* GCImageViewer.xib */; };
+		F6730BE8134A70F50045B876 /* TDHUDProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F6730BE7134A70F40045B876 /* TDHUDProgressBar.m */; };
+		F6730BEA134A71E40045B876 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6730BE9134A71E30045B876 /* QuartzCore.framework */; };
 		F69CED7610DA770800E72FD5 /* TwitterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F69CED7510DA770800E72FD5 /* TwitterRequest.m */; };
 		F69CEE7110DA94D400E72FD5 /* FBConnectGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = F69CEE5F10DA94D400E72FD5 /* FBConnectGlobal.m */; };
 		F69CEE7210DA94D400E72FD5 /* FBSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F69CEE6110DA94D400E72FD5 /* FBSession.m */; };
@@ -161,6 +166,14 @@
 		F6658265104FC21300BF91E9 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		F66BF56E105D5D59002F8C36 /* apfelshow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apfelshow.png; sourceTree = "<group>"; };
 		F6730BA113490EE70045B876 /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
+		F6730BB8134A67040045B876 /* AsyncImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageButton.h; sourceTree = "<group>"; };
+		F6730BB9134A67040045B876 /* AsyncImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageButton.m; sourceTree = "<group>"; };
+		F6730BE1134A70B40045B876 /* GCImageViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCImageViewer.h; sourceTree = "<group>"; };
+		F6730BE2134A70B40045B876 /* GCImageViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCImageViewer.m; sourceTree = "<group>"; };
+		F6730BE3134A70B40045B876 /* GCImageViewer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GCImageViewer.xib; path = Classes/GCImageViewer.xib; sourceTree = "<group>"; };
+		F6730BE6134A70F40045B876 /* TDHUDProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDHUDProgressBar.h; sourceTree = "<group>"; };
+		F6730BE7134A70F40045B876 /* TDHUDProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDHUDProgressBar.m; sourceTree = "<group>"; };
+		F6730BE9134A71E30045B876 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F69CED7410DA770800E72FD5 /* TwitterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwitterRequest.h; path = Classes/TwitterRequest.h; sourceTree = "<group>"; };
 		F69CED7510DA770800E72FD5 /* TwitterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwitterRequest.m; path = Classes/TwitterRequest.m; sourceTree = "<group>"; };
 		F69CEE5D10DA94D400E72FD5 /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBConnect.h; path = FBConnect/FBConnect.h; sourceTree = "<group>"; };
@@ -201,6 +214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6730BEA134A71E40045B876 /* QuartzCore.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -226,6 +240,7 @@
 				220A13211059031C001D295D /* Image.h */,
 				220A13221059031C001D295D /* Image.m */,
 				22090EBB104FAC3200A20868 /* Helper Views */,
+				F6730BBC134A70790045B876 /* Helper View Controllers */,
 				CB15C9691049B72000360BDC /* Master View Controllers */,
 				CB15C9681049B70100360BDC /* Detail View Controllers */,
 				CB15C8E81049A2D000360BDC /* Story Containers */,
@@ -254,6 +269,10 @@
 				227E1B5E105191D600844235 /* ImageCache.m */,
 				22090EBC104FAC4700A20868 /* AsyncImageView.h */,
 				22090EBD104FAC4700A20868 /* AsyncImageView.m */,
+				F6730BB8134A67040045B876 /* AsyncImageButton.h */,
+				F6730BB9134A67040045B876 /* AsyncImageButton.m */,
+				F6730BE6134A70F40045B876 /* TDHUDProgressBar.h */,
+				F6730BE7134A70F40045B876 /* TDHUDProgressBar.m */,
 			);
 			name = "Helper Views";
 			sourceTree = "<group>";
@@ -294,6 +313,7 @@
 				CB1E3BC610CC674600B01120 /* Entitlements.plist */,
 				F6730BA113490EE70045B876 /* default.css */,
 				CB1434AE1058616500B5FF14 /* Images */,
+				F6730BE3134A70B40045B876 /* GCImageViewer.xib */,
 				F6FB7DD5104EDE2F007F5A54 /* Fullscreen.xib */,
 				F634304A10362AA4004ACF93 /* DetailView.xib */,
 				28AD73870D9D96C1002E5188 /* MainWindow.xib */,
@@ -308,6 +328,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F6730BE9134A71E30045B876 /* QuartzCore.framework */,
 				CBC26120108B9DC500E5F36B /* SystemConfiguration.framework */,
 				CBA438F9105836D9002B2077 /* libxml2.dylib */,
 				22250A7110510E5E008B2EEC /* MessageUI.framework */,
@@ -392,6 +413,15 @@
 				4CC030DD1055D4340039DAB5 /* LivetickerNavigationController.m */,
 			);
 			name = "Master View Controllers";
+			sourceTree = "<group>";
+		};
+		F6730BBC134A70790045B876 /* Helper View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F6730BE1134A70B40045B876 /* GCImageViewer.h */,
+				F6730BE2134A70B40045B876 /* GCImageViewer.m */,
+			);
+			name = "Helper View Controllers";
 			sourceTree = "<group>";
 		};
 		F69CEE5C10DA94D400E72FD5 /* FBConnect */ = {
@@ -503,6 +533,7 @@
 				F6730BA213490EE70045B876 /* default.css in Resources */,
 				5A7B3A6D13491CE5000DDA5F /* Default@2x.png in Resources */,
 				5A7B3A7013491DDB000DDA5F /* icon@2x.png in Resources */,
+				F6730BE5134A70B40045B876 /* GCImageViewer.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +577,9 @@
 				F69CEE7710DA94D400E72FD5 /* FBLoginDialog.m in Sources */,
 				F69CEE7810DA94D400E72FD5 /* FBPermissionDialog.m in Sources */,
 				F69CEE7910DA94D400E72FD5 /* FBFeedDialog.m in Sources */,
+				F6730BBA134A67040045B876 /* AsyncImageButton.m in Sources */,
+				F6730BE4134A70B40045B876 /* GCImageViewer.m in Sources */,
+				F6730BE8134A70F50045B876 /* TDHUDProgressBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

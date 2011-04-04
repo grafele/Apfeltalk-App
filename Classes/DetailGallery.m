@@ -26,7 +26,7 @@
 #import "Fullscreen.h"
 #import "RootViewController.h"
 #import "Apfeltalk_MagazinAppDelegate.h"
-#import "GalleryImageViewController.h"
+#import "GCImageViewer.h"
 #import "ATMXMLUtilities.h"
 
 #import <libxml/HTMLparser.h>
@@ -186,7 +186,7 @@ void endElement (void *userData, const xmlChar *name) {
     
     switch (buttonIdx) {
         case 2: {
-            GalleryImageViewController *galleryImageViewController = [[GalleryImageViewController alloc] initWithURL:[NSURL URLWithString:imageLink]];
+            GCImageViewer *galleryImageViewController = [[GCImageViewer alloc] initWithURL:[NSURL URLWithString:imageLink]];
             [self.navigationController pushViewController:galleryImageViewController animated:YES];
             [galleryImageViewController release];
             break;
