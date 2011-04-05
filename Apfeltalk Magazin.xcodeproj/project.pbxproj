@@ -602,7 +602,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Stephan Koenig (CU3AUBYQNK)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -619,6 +619,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "Apfeltalk Magazin";
+				PROVISIONING_PROFILE = "4258B774-DDE6-46EA-8344-8AFE982E55A2";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -627,7 +628,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Stephan Koenig (CU3AUBYQNK)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Apfeltalk_Magazin_Prefix.pch;
@@ -642,6 +643,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "Apfeltalk Magazin";
+				PROVISIONING_PROFILE = "4258B774-DDE6-46EA-8344-8AFE982E55A2";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -672,7 +674,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Stephan Koenig (CU3AUBYQNK)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Apfeltalk GmbH";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -690,6 +692,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = ApfeltalkMagazin;
+				PROVISIONING_PROFILE = "4258B774-DDE6-46EA-8344-8AFE982E55A2";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "80361F76-2A93-4B4E-A627-6CD1D495D530";
 				SDKROOT = iphoneos;
 			};
