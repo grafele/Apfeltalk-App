@@ -33,7 +33,7 @@
 	NSString *extension = [[[self story] link] pathExtension];
 	if ([extension isEqualToString:@"mp4"] || [extension isEqualToString:@"m4v"]
 	|| [extension isEqualToString:@"mov"])
-		[thumbnailButton addTarget:self action:@selector(playMovie) forControlEvents:UIControlEventTouchUpInside];
+		[thumbnailButton addTarget:self action:@selector(playMovie) forControlEvents:UIControlEventTouchUpInside];    
 }
 
 - (NSString *) rightBarButtonTitle {
@@ -48,6 +48,28 @@
 - (UIImage *) thumbimage {
 	return [UIImage imageNamed:@"apfelshow.png"];
 }
+
+- (NSString *) htmlString {
+    // :below:20091220 All of this should be done with proper HTML Parsing
+	NSString *bodyString = [[self story] summary];    
+    
+    // NSString *queryString = extractTextFromHTMLForQuery(bodyString, @"//div[1]"); not used
+    // This does not work, as the query specifically extracts text
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"default" ofType:@"css"];
+	NSString *cssCode = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    
+	bodyString = [NSString stringWithFormat:@"<style type=\"text/css\"> %@ </style> <div style=\"text-align:center; font-weight:bold;\">%@</div>%@</div>", cssCode, [[self story] title], bodyString];
+    bodyString = [[self baseHtmlString] stringByReplacingOccurrencesOfString:@"%@" withString:bodyString];
+    
+	return bodyString;
+}
+
+- (void)updateInterface {
+    [super updateInterface];
+    [thumbnailButton setImage:[self thumbimage] forState:UIControlStateNormal];
+}
+
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType;
 {
