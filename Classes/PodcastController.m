@@ -40,6 +40,8 @@
 }
 
 - (NSString *) documentPath {
-	return @"http://feeds2.feedburner.com/apfeltalk-small";
+	return @"http://vimeo.com/apfeltalk/videos/rss";
 }
+
+
 @end

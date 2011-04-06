@@ -40,6 +40,7 @@
 */
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+
 - (void)viewDidLoad {
 	imageview.image = [UIImage imageWithData: [NSData dataWithContentsOfURL: [NSURL URLWithString:string]]];
 	if (imageview.image.size.width > imageview.image.size.height) {
@@ -50,8 +51,6 @@
 	}
     [super viewDidLoad];
 }
-
-
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.

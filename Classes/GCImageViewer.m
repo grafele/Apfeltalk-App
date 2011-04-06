@@ -42,6 +42,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 		
+	//url = [NSURL URLWithString:@"http://www.alliphonewallpapers.com/images/wallpapers/gk6aim4p7.jpg"];
 	NSURLRequest* request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30.0];
 	NSURLConnection* conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 	[conn start];
