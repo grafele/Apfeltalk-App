@@ -638,7 +638,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+<<<<<<< HEAD
 				CODE_SIGN_IDENTITY = "iPhone Developer: Stephan Koenig (CU3AUBYQNK)";
+=======
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+>>>>>>> dab0fb076fc059dfe1139b4d824cd3624570828f
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -659,7 +663,11 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "Apfeltalk Magazin";
+<<<<<<< HEAD
 				PROVISIONING_PROFILE = "4258B774-DDE6-46EA-8344-8AFE982E55A2";
+=======
+				PROVISIONING_PROFILE = "";
+>>>>>>> dab0fb076fc059dfe1139b4d824cd3624570828f
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -698,6 +706,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				"GCC_VERSION[sdk=iphonesimulator*][arch=*]" = "";
@@ -711,7 +720,7 @@
 				);
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos3.0;
+				SDKROOT = iphoneos;
 			};
 			name = Distribution;
 		};
@@ -752,6 +761,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				"GCC_VERSION[sdk=iphonesimulator*][arch=*]" = "";
@@ -765,7 +775,9 @@
 					"$(OTHER_CFLAGS)",
 				);
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.0;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -773,7 +785,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				"GCC_VERSION[sdk=iphonesimulator*][arch=*]" = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -785,7 +798,7 @@
 				);
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos3.0;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};

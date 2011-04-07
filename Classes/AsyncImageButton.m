@@ -129,4 +129,16 @@ static ImageCache *imageCache = nil;
     data = nil;
 }
 
+- (void)connection:(NSURLConnection *)aConnection didFailWithError:(NSError *)error {
+    [connection release];
+    connection = nil;
+    
+    UIView *spinny = [self viewWithTag:SPINNY_TAG];
+    [spinny removeFromSuperview];
+    
+    [self setNeedsLayout];
+    [data release];
+    data = nil;
+}
+
 @end
